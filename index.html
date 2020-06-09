@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>RocketGrid</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Tenali+Ramakrishna&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" async></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="leftmenu">
+        <h3>
+          RocketGrid <span><i class="fas fa-rocket"></i></span>
+        </h3>
+      </div>
+      <div class="rightmenu">
+        <a href="#" class="logout">Logout</a>
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <a href="#"><span>Home</span></a>
+      <a href="#"><span>About</span></a>
+      <a href="#"><span>Features</span></a>
+      <a href="#"><span>Articles</span></a>
+    </div>
+    <div class="viewport">
+      <div class="leftmenu spacer">
+        <h3>Population details</h3>
+      </div>
+      <div class="logout2 one">
+        <input type="button" value="filter" id="filter" />
+      </div>
+
+      <div id="maintable">
+        <table id="tableval" style="display: hidden;">
+          <thead id="thead"></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+        <div id="filtertab" style="visibility: hidden;">
+          <a id="close" href=""
+            ><i class="fas fa-times" style="margin-right: 10px;"></i
+          ></a>
+          <h3 id="filterheader"><strong>Filter by options</strong></h3>
+          <label for="region"><strong>Region:</strong></label
+          ><br />
+          <table class="filtertable">
+            <tr>
+              <td>Asia</td>
+              <td>
+                <input type="checkbox" name="region" id="Asia" value="Asia" />
+              </td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="region"
+                  id="Africa"
+                  value="Africa"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Americas</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="region"
+                  id="Americas"
+                  value="Americas"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Europe</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="region"
+                  id="Europe"
+                  value="Europe"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Oceania</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="region"
+                  id="Oceania"
+                  value="Oceania"
+                />
+              </td>
+            </tr>
+          </table>
+          <br />
+          <label for="subregion"><strong>SubRegion:</strong></label
+          ><br />
+          <table class="filtertable">
+            <tr>
+              <td>Southern Asia</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="subregion"
+                  id="Southern Asia"
+                  value="Southern Asia"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Northern Africa</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="subregion"
+                  id="Northern Africa"
+                  value="Northern Africa"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>South Americas</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="subregion"
+                  id="South Americas"
+                  value="South Americas"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Northern Europe</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="subregion"
+                  id="Northern Europe"
+                  value="Northern Europe"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Caribbean</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="subregion"
+                  id="Caribbean"
+                  value="Caribbean"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
